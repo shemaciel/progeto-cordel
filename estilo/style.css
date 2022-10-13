@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=Swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=Swap');
+/*configurndo nossas variaveis*/ 
+ :root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+ }
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+   }
+
+   header {
+    background-color: black;
+    color: white ;
+    text-align: center;
+   }
+/*falando sobre o titulo*/ 
+   header > h1 {
+    padding: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;  /*falando sobre o tamanho da letra*/ 
+    }
+/*falando sobre o parágrafo*/ 
+    header > p {
+        padding-bottom: 50px;
+    }
+
+   /*falando sobre o link dentro do cabeçlho*/ 
+   header a, footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    /*falando sobre o sublinhado, que esta no cabçalho*/ 
+    header a:hover, footer a:hover {
+         text-decoration: underline;
+
+    }
+    section{
+        padding-top: 10hv;      /*margem em cima*/ 
+        padding-bottom: 10vh;   /*margem em baixo*/ 
+        line-height: 2em;   /*espaço entre as linhas */ 
+        padding-left: 30px;
+        font-family: var(--fonte3);
+        font-size: 3.5vw;
+    }
+
+    section > p {
+        padding-bottom: 2em;
+
+
+    }
+    section.normal{
+        background-color: white;  /*cor do fundo*/ 
+        color:black;  /*cor da letra*/ 
+    }
+
+    section.imagem{
+    background-color:rgb(51, 51, 51);
+    color:white;
+    box-shadow: 6pxx 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+ /*todo paragrafo que estiver dentro de imagen terá uma caixa preta*/ 
+    section.imagem > p {
+     /*vai ter uma caixa no paragrafo pra não sobrepor a imagem*/ 
+    display: inline-block;
+    padding: 5px; /*vai ter esse tamanho pra não ficar colado na borda*/ 
+    background-color:rgba(0,0,0,0,514);
+    text-shadow: 1px 1px 0px black;
+   
+    }
+     section#img01 {
+        background-image: url(../background001.jpg);
+        background-position: right center;
+        
+    }
+ 
+    section#img02 {
+        background-image: url(../background002.jpg);
+        
+        }
+
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
